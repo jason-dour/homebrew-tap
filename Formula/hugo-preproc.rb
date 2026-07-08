@@ -25,6 +25,7 @@ class HugoPreproc < Formula
     end
 
     def install
+        ohai "bin: #{bin}"
         bins = Dir.glob "#{bin}/hugo-preproc_*"
         ohai "bins: #{bins}"
         binfile = File.basename(bins.first)
