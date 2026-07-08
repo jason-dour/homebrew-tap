@@ -24,7 +24,7 @@ class HugoPreproc < Formula
     end
 
     def install
-        bin.install "hugo-preproc"
+        bin.install url.split("/").last => "hugo-preproc"
     end
 
     test do
