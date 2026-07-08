@@ -25,7 +25,7 @@ class HugoPreproc < Formula
     end
 
     def install
-        binfile = File.basename(Dir.glob "#{prefix}/hugo-preproc*")
+        binfile = File.basename(Dir.glob "#{prefix}/bin/hugo-preproc_*")
         ohai "binfile: #{binfile}"
         bin.install binfile => "hugo-preproc"
     end
