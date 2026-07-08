@@ -11,7 +11,7 @@ class HugoPreproc < Formula
     depends_on "go-task"
 
     def install
-        system "task", "build"
+        system "go", "build", *std_go_args(ldflags: "-X {{.MODULE}}/internal/cmn.Version=#{version} -X {{.MODULE}}/internal/cmn.Basename=#{File.basename(buildpath)} -X {{.MODULE}}/internal/cmn.Commit=#{Utils.git_head}"), "./cmd/hugo-preproc"
         bin.install "hugo-preproc"
     end
 end
