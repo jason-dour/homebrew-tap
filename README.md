@@ -1,9 +1,9 @@
-# homebrew-oddgeek
+# homebrew-tap
 
-OddGeek Tools Homebrew Tap
+jason-dour Homebrew Tap
 
 ## Installation
 
 ```bash
-brew tap jason-dour/oddgeek
+brew tap jason-dour/tap
 ```
